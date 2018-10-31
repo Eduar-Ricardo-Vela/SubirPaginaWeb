@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/grid.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+	<!--[if lt IE 9]>
+		<script type="text/javascript" src="js/html5.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<header>
+		<nav>
+			<div class="container">
+				<div class="wrapper">
+					<h1><a href="index.html"><strong>Edugando</strong>Educa Jugando</a></h1>
+					<ul>
+						<li><a href="index.html">Inicio</a></li>
+						<li><a href="index-1.html">Multimedia</a></li>
+						<li><a href="index-2.html">Activides</a></li>
+					
+						<li><a href="index-3.html" class="current">Autores</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<section class="adv-content">
+			<div class="container">
+				<ul class="breadcrumbs">
+					<li>Contacts</li>
+				</ul>
+				<form action="" id="search-form">
+					<fieldset>
+						<input type="text" value=""><input type="submit" value="">
+					</fieldset>
+				</form>
+			</div>
+		</section><div class="ic">More Website Templates at TemplateMonster.com!</div>
+	</header>
+	<section id="content">
+		<div class="top">
+			<div class="container">
+				<div class="clearfix">
+					<div class="grid3 first">
+						
+					</div>
+					<div class="grid9">
+						<h2>DESCRIPCIÓN DE LAS ENTIDADES</h2>
+						<p><a href="#"><strong></strong></a>	Actividad Numero 1:Después de la descripción del proceso, detallo las entidades (tablas) que utilizamos para m0delizarlo:
+
+Cursos: podéis ver la descripción en el artículo anterior.
+Profesores: el personal que imparte las clases.
+Grupos: La oferta de horarios y días entre los que los alumnos pueden elegir para asistir a clase, dentro de cada curso.
+Horarios: Dentro de cada grupo, tenemos que almacenar su horario (que puede tener una estructura compleja, por ejemplo: Lunes y Miércoles de 19:00 a 20:00 y Viernes de 13:00 a 14:00, es más común de lo que parece). Además, hay que almacenar el historial de horarios por los que ha pasado el grupo, incluyendo los profesores.
+Clases: Cada uno de los días de clase dentro del horario del grupo. Por ejemplo, si tenemos un horario Lunes de 19:00 a 20:00, entre el 1 y el 30 de Abril, tendrá que haber un registro para cada Lunes entre esas dos fechas, para que después podamos gestionar si las clases se han impartido o no, cada una por separado.
+Tipos de tarea: Hay situaciones en las que es conveniente diferenciar qué se hace en los horarios del grupo. Podemos tener grupos de formación, como los que se describen en todo el artículo, pero también podemos tener grupos que gestionen las tareas administrativas de los profesores (preparación de clases, etc.) o incluso la agenda del personal no docente, simplemente diferenciando por tipo de tarea.
+
+</p> 
+
+						<p><a href="#"></a>   Campos de los Modelos Entidad Relacion
+	Como siempre, sólo pongo los campos que considero más relevantes para la descripción del modelo de datos, y no repito los campos de clave ajena para las relaciones, que ya están descritos en el gráfico. La definición de cursos y grupos es la misma que en la que hay en el artículo de matriculación:
+
+
+
+						<p><a href="#"><strong>Cubrimiento geográfico inicial y expansión</strong></a> EDUGANDOtendrá un lanzamiento en la ciudad de Ibagué en el centro comercial la quinta, porque es un centro comercial muy visitado por rectores de las instituciones, en nuevas tecnologías y la empresa es una diseñadora de videojuegos de última tecnología.</p>
+						
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="middle">
+			<div class="container">
+				<div class="clearfix">
+					<div class="grid3 first">
+						<h2>Contactos</h2>
+						<div class="wrapper">
+							<dl class="departments">
+								
+								
+								<dt>Eduar Ricardo Vela Pinilla:</dt>
+								<dd><span>Telephone:</span>3144650432</dd>
+								<dd><span>E-mail:</span><a href="#">Eduar-ricardopp@hotmail.com</a></dd>
+								
+								 
+							</dl>
+						</div>
+					</div>
+					<div class="grid9">
+						<h2>TRIGGERS Y PROCEDIMIENTOS ALMACENADOS </h2>
+						<div class="img-box">
+							<figure><img src="images/4page-img2.jpg" alt=""></figure>
+							<p><a href="#"></a>Este proceso, como hemos visto por la definición de las tablas, tiene muchos procesos ‘automáticos’, propios de la base de datos. Principalmente:
+
+Al crear un horario, tiene que haber un trigger que inserte en la base de datos todas las clases de ese horario, teniendo en cuenta la fecha de inicio y de fin y los días de clase, e incluyendo la gestión de días no lectivos si la hemos hecho.
+De la misma forma, necesitamos un trigger que al crear clases o incluir alumnos en grupos inserte en la base de datos los registros de asistencia de los alumnos y las clases a los que pertenecen.
+Es muy importante que estos dos procesos estén incluidos en la base de datos… El trabajo principal de los DOS, y la fuente principal de información de producción en la empresa es esta parte, y por tanto es muy importante que estos procesos sean ágiles. En las primeras versiones de Bravo, este proceso sea hacía en el lado cliente del sistema, y el rendimiento dejaba muchísimo que desear.p>
+				
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bottom">
+			<div class="container">
+				<div class="clearfix">
+					<div class="grid3 first">
+						<h3>Agregar Datos Inquietudes</h3>
+						<div class="wrapper">
+							<dl class="address">
+								<dt>Agregar Datos Inquietudes<br />
+								.</dt>
+								<dd><span>Telefono:</span>+1 800 559 6580</dd>
+								<dd><span>Correo:</span>Unad.edu.co</dd>
+								<dd><span>FAX:</span>+1 504 889 9898</dd>
+								<dd><span>E-mail:</span><a href="#">Edu.co@demolink.org</a></dd>
+							</dl>
+						</div>
+					</div>
+					<div class="grid3">
+						
+					</div>
+					<div class="grid6">
+						<h3>Contatos </h3>
+						<form action="" id="contacts-form">
+							<fieldset>
+								<div class="grid3 first">
+									<label>Nombre:<br />
+										<input type="text" value="" />
+									</label>
+									<label>Correo:<br />
+										<input type="email" value="" />
+									</label>
+									<label>Fax:<br />
+										<input type="text" value="" />
+									</label>
+								</div>
+								<div class="grid3">Message:<br />
+									<textarea></textarea>
+									<div class="alignright">
+										<a href="#" class="alt" onClick="document.getElementById('contacts-form').reset()">Clear</a> &nbsp; &nbsp; &nbsp;<a href="#" class="alt" onClick="document.getElementById('contacts-form').submit()">Submit</a>
+									</div>
+								</div>
+							</fieldset>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="container">
+			<div class="wrapper">
+				<div class="copy">Unad Universidad Nacional A distancia Y Abierta	|	<a href="index-4.html">Privacy policy</a></div>
+				<address class="phone">
+					We're glad to help you. Please email or call us. <strong>1-123-456-7890</strong>
+				</address>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
